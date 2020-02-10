@@ -609,7 +609,7 @@ func TestCacheGet_periodicRefreshBadRPCZeroIndexErrorBackoff(t *testing.T) {
 // immediately on the initial request if there is no data written to that table
 // yet.
 func TestCacheGet_noIndexSetsOne(t *testing.T) {
-	t.Parallel()
+	// t.Parallel()
 
 	typ := TestType(t)
 	defer typ.AssertExpectations(t)
